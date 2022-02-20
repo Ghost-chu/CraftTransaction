@@ -55,3 +55,21 @@ public class PurchaseMyAwesomeSword {
     }
 }
 ```
+
+## Maven
+Repository:
+```xml
+<repository>
+    <id>codemc-releases</id>
+    <url>https://repo.codemc.io/repository/maven-releases/</url>
+</repository>
+```
+Dependency:
+```
+<dependency>
+    <groupId>com.ghostchu</groupId>
+    <artifactId>crafttransaction</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
+```
