@@ -1,5 +1,5 @@
 # CraftTransaction
-[[ENG]](https://github.com/Ghost-chu/CraftTransaction/blob/master/README-ENG.md)
+[[ENG]](https://github.com/Ghost-chu/CraftTransaction/blob/master/README-ENG.md)  
 实现 Minecraft 中的 Economy 和 Inventory 事务机制
 
 ## 如何使用
