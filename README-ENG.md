@@ -65,7 +65,7 @@ Repository:
 </repository>
 ```
 Dependency:
-```
+```xml
 <dependency>
     <groupId>com.ghostchu</groupId>
     <artifactId>crafttransaction</artifactId>
