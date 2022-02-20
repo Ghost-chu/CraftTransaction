@@ -29,8 +29,11 @@ public class PurchaseMyAwesomeSword {
         } catch (Exception ex) {
             // 业务处理失败，回滚操作
             player.sendMessage("交易出错！正在撤销交易");
-            ecoTransaction.rollback(); // 手动回滚已完成的交易
-            player.sendMessage("交易已取消，消耗的金币已退还到你的账户中");
+            boolean rollback = ecoTransaction.rollback(); // 手动回滚已完成的交易
+            if( rollback )
+                player.sendMessage("交易已取消，消耗的金币已退还到你的账户中");
+            else
+                player.sendMessage("交易回滚失败，请联系服务器管理员！");
         } finally {
             player.sendMessage("交易关闭");
         }
