@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ghostchu</groupId>
-    <artifactId>CraftTransaction</artifactId>
+    <artifactId>crafttransaction</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
