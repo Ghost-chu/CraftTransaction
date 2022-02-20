@@ -16,6 +16,51 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <description>Implementing the Economy and Inventory transaction mechanisms in Minecraft.</description>
+    <url>https://github.com/Ghost-chu/CraftTransaction</url>
+
+    <developers>
+        <developer>
+            <id>Ghost_chu</id>
+            <name>Ghost chu</name>
+            <email>2908803755@qq.com</email>
+            <url>https://www.ghostchu.com</url>
+            <timezone>Asia/Shanghai</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:Ghost-chu/CraftTransaction.git</connection>
+        <developerConnection>scm:git:git@github.com:Ghost-chu/CraftTransaction.git</developerConnection>
+        <url>https://github.com/Ghost-chu/CraftTransaction</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <ciManagement>
+        <system>GitHub Actions</system>
+        <url>https://github.com/Ghost-chu/CraftTransaction/actions/workflows/maven.yml</url>
+    </ciManagement>
+
+
+    <distributionManagement>
+        <repository>
+            <id>codemc-releases</id>
+            <url>https://repo.codemc.io/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>codemc-snapshots</id>
+            <url>https://repo.codemc.io/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
     <build>
         <plugins>
             <plugin>
