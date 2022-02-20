@@ -75,29 +75,6 @@ public class EconomyTransaction extends Transaction {
     }
 
     /**
-     * Commit the transaction by the Fail-Safe way
-     * Automatic rollback when commit failed
-     *
-     * @return The transaction success.
-     */
-    public boolean failSafeCommit() {
-        boolean result = commit();
-        if (!result) {
-            rollback(true);
-        }
-        return result;
-    }
-
-    /**
-     * Commit the transaction
-     *
-     * @return The transaction success.
-     */
-    public boolean commit() {
-        return this.commit(new TransactionCallback(){});
-    }
-
-    /**
      * Commit the transaction with callback
      *
      * @param callback The result callback
