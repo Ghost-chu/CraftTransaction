@@ -1,6 +1,12 @@
 # CraftTransaction
 Implementing the Economy and Inventory transaction mechanisms in Minecraft.
 
+## Introduction
+
+CraftTransaction is a library that from [QuickShop-Hikari](https://github.com/Ghost-chu/CraftTransaction).  
+This library offers some features that from Databases "Transaction".  
+You can use CraftTransaction to prepare a transaction, then commit or rollback while transaction failed to prevent player dupe items or money in game.  
+
 ## How to use
 
 ```java
@@ -54,4 +60,22 @@ public class PurchaseMyAwesomeSword {
         player.sendMessage("OK You got your sword now!");
     }
 }
+```
+
+## Maven
+Repository:
+```xml
+<repository>
+    <id>codemc-releases</id>
+    <url>https://repo.codemc.io/repository/maven-releases/</url>
+</repository>
+```
+Dependency:
+```xml
+<dependency>
+    <groupId>com.ghostchu</groupId>
+    <artifactId>crafttransaction</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
 ```
